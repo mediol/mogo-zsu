@@ -152,3 +152,8 @@ hr {
 .wrapper:hover::before {
   opacity: 1;
 }
+
+footer .container {
+  display: flex;
+  align-items: center;
+}
