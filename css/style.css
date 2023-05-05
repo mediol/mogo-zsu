@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: #b6b6b6;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1, h2, h3 {
+  color: #333333;
+  font-family: 'Montserrat', sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.container {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* header */
+header {
+  padding: 17px 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  color: #95E1D3;
+}
+
+.logo {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px
+}
+
+.menu {
+  display: flex;
+  gap: 55px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* services */
+.services {
+  padding: 51px 0 50px;
+}
+
+.section-title {
+  text-align: center;
+}
+
+.uptitle {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 24px;
+  line-height: 35px;
+  color: #333;
+  margin: 0;
+}
+
+hr {
+  width: 60px;
+  height: 4px;
+  background: #F38181;
+  border: none;
+}
+
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 100px;
+  margin-top: 65px;
+}
+
+.services-list li {
+  width: 33.33%;
+  padding-left: 35px;
+  padding-right: 35px;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.services-list h3 {
+  margin: 0 0 20px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+}
+
+.services-list p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 22px;
+}
+
+/* team */
+.team {
+  padding: 50px 0 80px;
+}
+
+.member_list {
+  display: flex;
+  column-gap: 30px;
+}
+
+.member_item {
+  text-align: center;
+  width: calc(100% / 3);
+}
+
+.member_photo {
+  display: block;
+  width: 100%;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.wrapper::before {
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(180deg, rgba(239, 139, 138, 0.8) 0%, rgba(229, 207, 130, 0.8) 100%);
+  position: absolute;
+  top: -10px;
+  right: 10px;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.wrapper:hover::before {
+  opacity: 1;
+}
